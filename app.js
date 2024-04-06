@@ -1,0 +1,26 @@
+Vue.createApp({
+    data(){
+      return{
+        useDarkNavbar: false,
+        activePage: 0,
+        pages: 
+                [
+                    {
+                      link: {url: 'index.html' , text:'Home'},
+                      pageTitle:'Hello vue, you are in the Index',
+                      pageContent:'Welcome to my training with vue'
+                    },
+                    {
+                      link: {url: 'about.html' , text:'About'},
+                      pageTitle:'Hello vue, you are in the About',
+                      pageContent:'Welcome to my training with vue'
+                    },
+                    {
+                      link: {url: 'contact.html' , text:'Contact'},
+                      pageTitle:'Hello vue, you are in the Contact',
+                      pageContent:'Welcome to my training with vue'
+                    }                
+                ]
+      };
+    }
+  }).mount('body')
